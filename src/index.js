@@ -3,11 +3,24 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
+import LoginForm from './login/loginForm';
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+  Link,
+  Redirect
+} from "react-router-dom";
 
-ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
+ReactDOM.render((
+  <Router>
+    <Switch>
+      <Route exact path="/" component={App} />
+      <Route exact path="/login" component={LoginForm} />
+    </Switch>
+  </Router>
+  ),
+  
   document.getElementById('root')
 );
 

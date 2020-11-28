@@ -1,9 +1,8 @@
 import React from 'react';
 import {Card,Button, CardColumns} from 'react-bootstrap';
 
-const link  = "https://www.google.com"
-
 function Cards() {
+    const link  = "https://www.google.com";
     return (
         <CardColumns className="alignText">
             <Card className="alignText" border="light">
@@ -17,7 +16,7 @@ function Cards() {
                     <Card.Text>
                         <small><Card.Link href="#demo">Request for demo here</Card.Link></small>
                         <br/>
-                        <small>Already a user? Login <Card.Link href="/login">here</Card.Link></small>
+                        <small>Already a user? Login <Card.Link href="login">here</Card.Link></small>
                     </Card.Text>
                 </Card.Body>
             </Card>
@@ -30,7 +29,7 @@ function Cards() {
                         Just regitser or login using the information provided by the school.
                     </Card.Text>
                     <Button variant="info">Register</Button>
-                    <small><Card.Text >Already a user? Login <Card.Link href="/login">here</Card.Link></Card.Text></small>
+                    <small><Card.Text >Already a user? Login <Card.Link href="login">here</Card.Link></Card.Text></small>
 
                 </Card.Body>
             </Card>

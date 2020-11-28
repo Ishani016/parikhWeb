@@ -46,6 +46,26 @@
   color: #61dafb;
 }
 
+.radioButton {
+  align-content: center;
+  margin-left: 10px;
+}
+
+#left {
+  margin-right: 5px;
+  margin-left: 5px;
+}
+
+#right {
+  margin-right: 5px;
+  margin-left: 60px;
+}
+
+.error {
+  color: red;
+  font-size: 10px;
+}
+
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
