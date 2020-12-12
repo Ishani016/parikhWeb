@@ -11,12 +11,14 @@ import {
   Link,
   Redirect
 } from "react-router-dom";
+import Business from './business/business';
 
 ReactDOM.render((
   <Router>
     <Switch>
       <Route exact path="/" component={App} />
       <Route exact path="/login" component={LoginForm} />
+      <Route exact path="/business" component={Business}/>
     </Switch>
   </Router>
   ),
